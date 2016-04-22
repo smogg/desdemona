@@ -1,6 +1,6 @@
 (ns desdemona.ui.core
   (:require [desdemona.ui.nav :refer [nav]]
-            [reagent.core :as reagent]
+            [reagent.core :as r]
             [reagent.session :as session]
             [secretary.core :as secretary :include-macros true]
             [accountant.core :as accountant]
@@ -12,7 +12,7 @@
    [(session/get :current-page)]])
 
 (defn mount-root []
-  (reagent/render [current-page] (.getElementById js/document "app")))
+  (r/render [current-page] (.getElementById js/document "app")))
 
 (defn init!
   []
