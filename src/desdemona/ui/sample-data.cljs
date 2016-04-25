@@ -912,4 +912,6 @@
     :critical true
     :created-at "2005-03-30T11:49:32-02:00"}])
 
-(def sample-state {:results example-results})
+(def sample-state {:results example-results
+                   :table-sort-key :id
+                   :table-sort-order :asc})
