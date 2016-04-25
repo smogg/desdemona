@@ -29,6 +29,8 @@
                  [org.clojure/tools.nrepl "0.2.12"]
                  [cljsjs/react-bootstrap "0.28.1-1"
                   :exclusions [org.webjars.bower/jquery]]
+                 [wilson "0.17.0"
+                  :exclusions [cljsjs/react]]
                  [ring/ring-defaults "0.2.0"]
                  [ring/ring-mock "0.3.0"]
 
